@@ -1,9 +1,9 @@
 import { FirstSectionAboutUs } from './components/section1.jsx'
 
-export const AboutUs = () => {
+export const AboutUs = (props) => {
     return (
         <>  
-            <FirstSectionAboutUs/>
+            <FirstSectionAboutUs  DB={props.DB} setDB={props.setDB}/>
         </>
     )
 }
